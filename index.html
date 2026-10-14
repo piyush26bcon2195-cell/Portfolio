@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===================================================================
+       SEO & META INFORMATION
+       =================================================================== -->
+  <title>Piyush Yadav | First-Year B.Tech CSE Student &amp; Aspiring Developer</title>
+  <meta name="description" content="Personal portfolio of Piyush Yadav - First-year Computer Science Engineering student at JECRC University, Jaipur. Exploring Web Development, Python, and AI Data Tools." />
+  <meta name="keywords" content="Piyush Yadav, JECRC University, B.Tech CSE, Jaipur, Web Development, Python, AI, Portfolio, Student Developer" />
+  <meta name="author" content="Piyush Yadav" />
+
+  <!-- Open Graph / Social Sharing Meta Tags -->
+  <meta property="og:title" content="Piyush Yadav | Portfolio" />
+  <meta property="og:description" content="First-year B.Tech CSE student at JECRC University passionate about Web Development, Python, and AI data tools." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/avatar.svg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Google Fonts: Outfit & Inter for high-tech, modern typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6 Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================================================================
+       1. NAVIGATION BAR
+       =================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Brand Logo / Monogram -->
+      <a href="#home" class="nav-brand" aria-label="Piyush Yadav Homepage">
+        <span class="brand-bracket">&lt;</span>
+        <span class="brand-name">Piyush</span>
+        <span class="brand-dot">.</span>
+        <span class="brand-role">dev</span>
+        <span class="brand-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certifications" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Controls: Theme Toggle & Mobile Hamburger -->
+      <div class="nav-actions">
+        <!-- Light / Dark Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Light and Dark Mode" title="Toggle theme">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open mobile navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Backdrop Overlay -->
+  <div class="menu-backdrop" id="menuBackdrop"></div>
+
+  <main>
+    <!-- ===================================================================
+         2. HOME / HERO SECTION
+         =================================================================== -->
+    <section class="hero-section" id="home">
+      <!-- Background Ambient Glow Circles -->
+      <div class="ambient-glow glow-top-left"></div>
+      <div class="ambient-glow glow-bottom-right"></div>
+
+      <div class="container hero-container">
+        <!-- Left Hero Content -->
+        <div class="hero-content" data-reveal="fade-up">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>Available for Collaborations &amp; Internships</span>
+          </div>
+
+          <h1 class="hero-greeting">
+            Hello, World! <span class="wave-emoji">👋</span>
+          </h1>
+
+          <!-- EDIT HERE: Your Display Name -->
+          <h2 class="hero-name">
+            I'm <span class="gradient-text">Piyush Yadav</span>
+          </h2>
+
+          <!-- Dynamic Typing Effect for Roles -->
+          <div class="hero-typing-wrapper">
+            <span class="typing-prefix">I am a </span>
+            <span class="typing-text" id="typingText"></span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <!-- EDIT HERE: Your Short Tagline -->
+          <p class="hero-tagline">
+            First-year Computer Science Engineering student at <strong>JECRC University, Jaipur</strong>.
+            Passionate about learning modern technology, building efficient software, and exploring the power of AI &amp; data tools.
+          </p>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-laptop-code"></i>
+              <span>View Projects</span>
+            </a>
+            <!-- EDIT HERE: Resume file link -->
+            <a href="assets/resume-sample.pdf" class="btn btn-outline" download="Piyush_Yadav_Resume.pdf" id="resumeBtn">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+          <!-- Quick Social Handles in Hero -->
+          <div class="hero-socials">
+            <span class="social-label">Connect with me:</span>
+            <div class="social-links-row">
+              <!-- EDIT HERE: GitHub Profile -->
+              <a href="https://github.com/piyush26bcon2195-cell" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <!-- EDIT HERE: LinkedIn Profile -->
+              <a href="https://www.linkedin.com/in/piyush-yadav-b19512435?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <!-- EDIT HERE: Contact Email -->
+              <a href="mailto:piyush.26bcon2195@jecrcu.edu.in" class="social-icon" aria-label="Email Piyush">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual / Avatar -->
+        <div class="hero-visual" data-reveal="fade-left">
+          <div class="avatar-card-wrapper">
+            <div class="avatar-glow-ring"></div>
+            <!-- EDIT HERE: You can replace 'assets/avatar.svg' with your own photo (e.g. 'assets/my-photo.jpg') -->
+            <img src="assets/avatar.svg" alt="Piyush Yadav Portrait" class="avatar-img" />
+
+            <!-- Floating Tech Badges around Avatar -->
+            <div class="floating-badge badge-top-left" title="Artificial Intelligence">
+              <i class="fa-solid fa-brain"></i>
+              <span>AI &amp; Data</span>
+            </div>
+            <div class="floating-badge badge-bottom-right" title="Python Programming">
+              <i class="fa-brands fa-python"></i>
+              <span>Python</span>
+            </div>
+            <div class="floating-badge badge-bottom-left" title="Web Development">
+              <i class="fa-solid fa-code"></i>
+              <span>Web Dev</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#about" class="scroll-down-indicator" aria-label="Scroll to About Me section">
+        <span>Scroll Down</span>
+        <i class="fa-solid fa-chevron-down bounce"></i>
+      </a>
+    </section>
+
+    <!-- ===================================================================
+         3. ABOUT ME SECTION
+         =================================================================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-tag"><i class="fa-regular fa-user"></i> Getting To Know Me</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Graphic & Quick Stats -->
+          <div class="about-visual-col" data-reveal="fade-right">
+            <div class="about-card-banner">
+              <div class="code-terminal-mockup">
+                <div class="terminal-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                  <span class="terminal-title">student_profile.py</span>
+                </div>
+                <div class="terminal-body">
+                  <p><span class="code-keyword">class</span> <span class="code-class">StudentDeveloper</span>:</p>
+                  <p class="indent-1"><span class="code-def">def</span> <span class="code-func">__init__</span>(self):</p>
+                  <p class="indent-2">self.name = <span class="code-str">"Piyush Yadav"</span></p>
+                  <p class="indent-2">self.university = <span class="code-str">"JECRC University, Jaipur"</span></p>
+                  <p class="indent-2">self.degree = <span class="code-str">"B.Tech CSE (2025-2029)"</span></p>
+                  <p class="indent-2">self.interests = [<span class="code-str">"Web Dev"</span>, <span class="code-str">"Python"</span>, <span class="code-str">"AI Data Tools"</span>]</p>
+                  <p class="indent-1"><span class="code-def">def</span> <span class="code-func">current_mission</span>(self):</p>
+                  <p class="indent-2"><span class="code-keyword">return</span> <span class="code-str">"Learn modern tech &amp; build impactful solutions."</span></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mini Stat Counters -->
+            <div class="about-stats-grid">
+              <div class="stat-card">
+                <span class="stat-number">1st</span>
+                <span class="stat-label">Year CSE Student</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Labs &amp; Mini Projects</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Core Tech Skills</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Dedication to Tech</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Biography & Quick Facts -->
+          <div class="about-text-col" data-reveal="fade-left">
+            <h3 class="about-lead-title">
+              Driven by curiosity, fueled by code, and aiming for impactful technology.
+            </h3>
+
+            <!-- EDIT HERE: Your Short Bio -->
+            <p class="about-bio-text">
+              I am a first year student of Computer Science Engineering and I have the keen interest for learning about technology and AI data tools.
+            </p>
+            <p class="about-bio-text">
+              Currently pursuing my <strong>B.Tech in Computer Science and Engineering at JECRC University, Jaipur</strong>, I spend my time mastering fundamental computer science principles, exploring modern web development with HTML, CSS, and JavaScript, and experimenting with Python automation and intelligent data tools.
+            </p>
+            <p class="about-bio-text">
+              I love participating in hackathons, collaborating with fellow student engineers, and tackling challenging problem-solving exercises. My objective is to build a rock-solid foundation in software engineering and contribute to open-source and real-world tech projects.
+            </p>
+
+            <!-- Quick Facts Cards -->
+            <div class="quick-facts-container">
+              <div class="fact-item">
+                <div class="fact-icon"><i class="fa-solid fa-building-columns"></i></div>
+                <div class="fact-details">
+                  <span class="fact-title">University</span>
+                  <!-- EDIT HERE: University Name -->
+                  <span class="fact-value">JECRC University, Jaipur</span>
+                </div>
+              </div>
+
+              <div class="fact-item">
+                <div class="fact-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="fact-details">
+                  <span class="fact-title">Degree &amp; Major</span>
+                  <!-- EDIT HERE: Degree & Branch -->
+                  <span class="fact-value">B.Tech - Computer Science (CSE)</span>
+                </div>
+              </div>
+
+              <div class="fact-item">
+                <div class="fact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="fact-details">
+                  <span class="fact-title">Location</span>
+                  <!-- EDIT HERE: Location -->
+                  <span class="fact-value">Jaipur, Rajasthan, India</span>
+                </div>
+              </div>
+
+              <div class="fact-item">
+                <div class="fact-icon"><i class="fa-solid fa-compass"></i></div>
+                <div class="fact-details">
+                  <span class="fact-title">Key Interests</span>
+                  <!-- EDIT HERE: Key Interests -->
+                  <span class="fact-value">Web Dev, Python &amp; AI Data Tools</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- About CTAs -->
+            <div class="about-btn-row">
+              <a href="#contact" class="btn btn-primary">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Get In Touch</span>
+              </a>
+              <a href="#skills" class="btn btn-outline">
+                <i class="fa-solid fa-bolt"></i>
+                <span>Explore Skills</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         4. EDUCATION SECTION
+         =================================================================== -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Academic Journey</span>
+          <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-line"></div>
+
+          <!-- Timeline Item 1: B.Tech at JECRC University -->
+          <div class="timeline-item" data-reveal="fade-up">
+            <div class="timeline-node">
+              <i class="fa-solid fa-university"></i>
+            </div>
+            <div class="timeline-content card-glass">
+              <div class="timeline-meta">
+                <span class="timeline-badge current-badge">
+                  <i class="fa-solid fa-circle-dot"></i> In Progress (1st Year)
+                </span>
+                <span class="timeline-period"><i class="fa-regular fa-calendar-days"></i> 2025 &mdash; 2029</span>
+              </div>
+              <h3 class="timeline-title">Bachelor of Technology (B.Tech)</h3>
+              <h4 class="timeline-subtitle">
+                <i class="fa-solid fa-school"></i> JECRC University, Jaipur
+              </h4>
+              <p class="timeline-discipline">
+                <strong>Major:</strong> Computer Science and Engineering (CSE)
+              </p>
+              <p class="timeline-description">
+                Building a rigorous theoretical and hands-on foundation in computer science. Focusing on core programming with C and Python, algorithmic thinking, data structures, discrete mathematics, and software design fundamentals. Actively engaged in campus developer circles and student hackathon teams.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Computer Science</span>
+                <span class="tag">Data Structures</span>
+                <span class="tag">C Programming</span>
+                <span class="tag">Python</span>
+                <span class="tag">Software Foundations</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: Senior Secondary Schooling (Placeholder) -->
+          <!-- EDIT HERE: Update with your school name, board, and year of graduation -->
+          <div class="timeline-item" data-reveal="fade-up">
+            <div class="timeline-node">
+              <i class="fa-solid fa-school"></i>
+            </div>
+            <div class="timeline-content card-glass">
+              <div class="timeline-meta">
+                <span class="timeline-badge completed-badge">
+                  <i class="fa-solid fa-check"></i> Completed
+                </span>
+                <span class="timeline-period"><i class="fa-regular fa-calendar-days"></i> 2023 &mdash; 2025</span>
+              </div>
+              <h3 class="timeline-title">Senior Secondary School (Class XII)</h3>
+              <h4 class="timeline-subtitle">
+                <!-- EDIT HERE: Your School Name -->
+                <i class="fa-solid fa-landmark"></i> High School / Senior Secondary Education
+              </h4>
+              <p class="timeline-discipline">
+                <strong>Stream:</strong> Science (Physics, Chemistry, Mathematics &amp; Computer Science)
+              </p>
+              <p class="timeline-description">
+                Graduated with a strong analytical grounding in advanced mathematics, logical reasoning, and basic computing concepts. Formed the key mathematical and analytical baseline for engineering studies.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Mathematics</span>
+                <span class="tag">Physics</span>
+                <span class="tag">Logical Reasoning</span>
+                <span class="tag">Computer Science</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         5. SKILLS SECTION
+         =================================================================== -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-tag"><i class="fa-solid fa-layer-group"></i> My Technical Stack</span>
+          <h2 class="section-title">Skills &amp; <span class="gradient-text">Proficiencies</span></h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">
+            A growing toolkit of programming languages, web technologies, developer utilities, and problem-solving abilities.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Category 1: Programming Languages -->
+          <div class="skill-category-card card-glass" data-reveal="fade-up">
+            <div class="category-header">
+              <div class="category-icon icon-code">
+                <i class="fa-solid fa-terminal"></i>
+              </div>
+              <div>
+                <h3 class="category-title">Programming</h3>
+                <span class="category-subtitle">Core &amp; Scripting Languages</span>
+              </div>
+            </div>
+
+            <div class="skill-list">
+              <!-- Skill: C -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-c"></i> C Language</span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" data-progress="80%"></div>
+                </div>
+              </div>
+
+              <!-- Skill: Python -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-python"></i> Python</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" data-progress="85%"></div>
+                </div>
+              </div>
+
+              <!-- Skill: JavaScript -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-js"></i> JavaScript (ES6+)</span>
+                  <span class="skill-percent">75%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" data-progress="75%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Category 2: Web Development -->
+          <div class="skill-category-card card-glass" data-reveal="fade-up" data-delay="100">
+            <div class="category-header">
+              <div class="category-icon icon-web">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <div>
+                <h3 class="category-title">Web Technologies</h3>
+                <span class="category-subtitle">Front-End &amp; UI Building</span>
+              </div>
+            </div>
+
+            <div class="skill-list">
+              <!-- Skill: HTML5 -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-html5"></i> HTML5 (Semantic)</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" data-progress="90%"></div>
+                </div>
+              </div>
+
+              <!-- Skill: CSS3 -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-css3-alt"></i> CSS3 &amp; Flexbox / Grid</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" data-progress="85%"></div>
+                </div>
+              </div>
+
+              <!-- Skill: Responsive Design -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-mobile-screen"></i> Responsive UI Design</span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" data-progress="80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Category 3: Tools & Platforms -->
+          <div class="skill-category-card card-glass" data-reveal="fade-up" data-delay="200">
+            <div class="category-header">
+              <div class="category-icon icon-tools">
+                <i class="fa-solid fa-wrench"></i>
+              </div>
+              <div>
+                <h3 class="category-title">Tools &amp; Platforms</h3>
+                <span class="category-subtitle">Developer Workflow &amp; AI</span>
+              </div>
+            </div>
+
+            <div class="skill-list">
+              <!-- Skill: Git & GitHub -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-github"></i> Git &amp; GitHub</span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" data-progress="80%"></div>
+                </div>
+              </div>
+
+              <!-- Skill: VS Code -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-code"></i> VS Code</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" data-progress="90%"></div>
+                </div>
+              </div>
+
+              <!-- Skill: AI & Data Tools -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-robot"></i> AI Data Tools &amp; Prompting</span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" data-progress="80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Category 4: Soft Skills & Mindset -->
+          <div class="skill-category-card card-glass" data-reveal="fade-up" data-delay="300">
+            <div class="category-header">
+              <div class="category-icon icon-soft">
+                <i class="fa-solid fa-lightbulb"></i>
+              </div>
+              <div>
+                <h3 class="category-title">Soft Skills</h3>
+                <span class="category-subtitle">Collaboration &amp; Mindset</span>
+              </div>
+            </div>
+
+            <div class="skill-list">
+              <!-- Skill: Problem Solving -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-puzzle-piece"></i> Problem Solving &amp; Logic</span>
+                  <span class="skill-percent">88%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" data-progress="88%"></div>
+                </div>
+              </div>
+
+              <!-- Skill: Team Collaboration -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-people-group"></i> Teamwork &amp; Hackathons</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" data-progress="85%"></div>
+                </div>
+              </div>
+
+              <!-- Skill: Quick Learner -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-arrow-trend-up"></i> Rapid Learning &amp; Adaptability</span>
+                  <span class="skill-percent">92%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" data-progress="92%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         6. PROJECTS SECTION
+         =================================================================== -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-tag"><i class="fa-solid fa-diagram-project"></i> Portfolio Showcase</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">
+            A selection of university hackathon concepts, Python automation scripts, and web development prototypes.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Hackathon Innovation -->
+          <div class="project-card card-glass" data-reveal="fade-up">
+            <div class="project-img-wrapper">
+              <img src="assets/project-hackathon.svg" alt="Smart Campus Connect Hackathon Project" class="project-img" loading="lazy" />
+              <div class="project-tag-overlay">Hackathon Project</div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Smart Campus Connect</h3>
+              <p class="project-description">
+                A digital campus ecosystem conceptualized for university hackathons. Enables students to access lecture notes, organize peer study circles, and track technical events in real-time.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Python Backend</span>
+              </div>
+              <div class="project-actions">
+                <!-- EDIT HERE: Replace with your live demo and GitHub repo link -->
+                <a href="https://github.com/piyush26bcon2195-cell" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <span>Live Demo</span>
+                </a>
+                <a href="https://github.com/piyush26bcon2195-cell" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: AI & Data Explorer -->
+          <div class="project-card card-glass" data-reveal="fade-up" data-delay="100">
+            <div class="project-img-wrapper">
+              <img src="assets/project-ai.svg" alt="AI Data Explorer &amp; Visualizer" class="project-img" loading="lazy" />
+              <div class="project-tag-overlay">AI &amp; Data Tools</div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">AI Data Insights Explorer</h3>
+              <p class="project-description">
+                An intelligent data analytics exploration script. Parses CSV datasets, generates statistical correlations, and leverages AI prompting patterns to summarize key findings automatically.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Data Analysis</span>
+                <span class="tech-badge">AI Utilities</span>
+                <span class="tech-badge">Automation</span>
+              </div>
+              <div class="project-actions">
+                <!-- EDIT HERE: Replace with your live demo and GitHub repo link -->
+                <a href="https://github.com/piyush26bcon2195-cell" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <span>Live Demo</span>
+                </a>
+                <a href="https://github.com/piyush26bcon2195-cell" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Responsive Portfolio Website -->
+          <div class="project-card card-glass" data-reveal="fade-up" data-delay="200">
+            <div class="project-img-wrapper">
+              <img src="assets/project-portfolio.svg" alt="Personal Responsive Portfolio" class="project-img" loading="lazy" />
+              <div class="project-tag-overlay">Web Development</div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Modern Personal Portfolio</h3>
+              <p class="project-description">
+                A responsive, single-page developer portfolio with dark/light theme switching, smooth animations, glassmorphism UI, accessible semantics, and client-side contact validation.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">Modern CSS</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Responsive</span>
+              </div>
+              <div class="project-actions">
+                <!-- EDIT HERE: Replace with your live demo and GitHub repo link -->
+                <a href="#home" class="btn btn-sm btn-primary">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <span>Live Demo</span>
+                </a>
+                <a href="https://github.com/piyush26bcon2195-cell" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Python Automation & Utility Suite -->
+          <div class="project-card card-glass" data-reveal="fade-up" data-delay="300">
+            <div class="project-img-wrapper">
+              <img src="assets/project-python.svg" alt="Python Automation &amp; Utility Suite" class="project-img" loading="lazy" />
+              <div class="project-tag-overlay">Automation &amp; Tools</div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Python Automation Utilities</h3>
+              <p class="project-description">
+                A modular suite of Python command-line tools to automate file sorting, clean up workspace directories, batch-process text data, and handle routine engineering workflows.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-badge">Python 3</span>
+                <span class="tech-badge">OS / Sys CLI</span>
+                <span class="tech-badge">Regex</span>
+                <span class="tech-badge">Productivity</span>
+              </div>
+              <div class="project-actions">
+                <!-- EDIT HERE: Replace with your live demo and GitHub repo link -->
+                <a href="https://github.com/piyush26bcon2195-cell" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <span>Live Demo</span>
+                </a>
+                <a href="https://github.com/piyush26bcon2195-cell" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Note to edit projects -->
+        <div class="projects-footer-note" data-reveal="fade-up">
+          <p><i class="fa-solid fa-circle-info"></i> More personal projects &amp; academic labs are continuously being uploaded to my <a href="https://github.com/piyush26bcon2195-cell" target="_blank" rel="noopener noreferrer" class="inline-link">GitHub repository</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         7. CERTIFICATIONS & ACHIEVEMENTS SECTION
+         =================================================================== -->
+    <section class="section cert-section" id="certifications">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-tag"><i class="fa-solid fa-award"></i> Milestones</span>
+          <h2 class="section-title">Certifications &amp; <span class="gradient-text">Achievements</span></h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">
+            Key milestones, hackathon participations, and learning certifications earned along the way.
+          </p>
+        </div>
+
+        <div class="cert-grid">
+          <!-- Cert 1: University Hackathon Participation -->
+          <div class="cert-card card-glass" data-reveal="fade-up">
+            <div class="cert-badge-icon">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+            <div class="cert-content">
+              <div class="cert-date"><i class="fa-regular fa-calendar-days"></i> 2025 &mdash; 2026</div>
+              <h3 class="cert-title">University Hackathon Competitor</h3>
+              <!-- EDIT HERE: Issuer & Details -->
+              <h4 class="cert-issuer"><i class="fa-solid fa-building-columns"></i> JECRC University Tech Fest</h4>
+              <p class="cert-description">
+                Participated in rapid prototyping competitions, collaborating in small teams to brainstorm, design, and pitch innovative technical solutions within 24-36 hours.
+              </p>
+              <div class="cert-footer">
+                <span class="cert-tag"><i class="fa-solid fa-certificate"></i> Hackathon Achievement</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 2: Python Programming Foundations -->
+          <div class="cert-card card-glass" data-reveal="fade-up" data-delay="100">
+            <div class="cert-badge-icon">
+              <i class="fa-brands fa-python"></i>
+            </div>
+            <div class="cert-content">
+              <div class="cert-date"><i class="fa-regular fa-calendar-days"></i> 2025</div>
+              <h3 class="cert-title">Python Programming Foundations</h3>
+              <!-- EDIT HERE: Issuer & Details -->
+              <h4 class="cert-issuer"><i class="fa-solid fa-certificate"></i> Online Learning Platform / University</h4>
+              <p class="cert-description">
+                Completed comprehensive coursework on Python syntax, control structures, functional programming, file input/output, and problem-solving fundamentals.
+              </p>
+              <div class="cert-footer">
+                <span class="cert-tag"><i class="fa-solid fa-award"></i> Verified Credential</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 3: Responsive Web Design Basics -->
+          <div class="cert-card card-glass" data-reveal="fade-up" data-delay="200">
+            <div class="cert-badge-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="cert-content">
+              <div class="cert-date"><i class="fa-regular fa-calendar-days"></i> 2025</div>
+              <h3 class="cert-title">Responsive Web Design</h3>
+              <!-- EDIT HERE: Issuer & Details -->
+              <h4 class="cert-issuer"><i class="fa-solid fa-laptop-code"></i> freeCodeCamp / Web Dev Track</h4>
+              <p class="cert-description">
+                Constructed modern responsive web layouts using semantic HTML5, CSS Flexbox, CSS Grid, media queries, and accessible UI best practices.
+              </p>
+              <div class="cert-footer">
+                <span class="cert-tag"><i class="fa-solid fa-award"></i> Verified Credential</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 4: AI & Data Tools Exploration -->
+          <div class="cert-card card-glass" data-reveal="fade-up" data-delay="300">
+            <div class="cert-badge-icon">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <div class="cert-content">
+              <div class="cert-date"><i class="fa-regular fa-calendar-days"></i> 2025</div>
+              <h3 class="cert-title">AI &amp; Data Tools Workshop</h3>
+              <!-- EDIT HERE: Issuer & Details -->
+              <h4 class="cert-issuer"><i class="fa-solid fa-microchip"></i> University Tech Club / Seminar</h4>
+              <p class="cert-description">
+                Gained practical insights into utilizing generative AI platforms, dataset exploratory techniques, prompt engineering, and intelligent developer automation tools.
+              </p>
+              <div class="cert-footer">
+                <span class="cert-tag"><i class="fa-solid fa-award"></i> Workshop Certificate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         8. CONTACT SECTION
+         =================================================================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-tag"><i class="fa-solid fa-envelope"></i> Let's Talk</span>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">
+            Have a project idea, want to collaborate on a hackathon, or just want to chat about tech? Feel free to reach out!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Contact Cards & Info -->
+          <div class="contact-info-col" data-reveal="fade-right">
+            <h3 class="contact-col-title">Contact Information</h3>
+            <p class="contact-col-desc">
+              I am always excited to connect with developers, mentors, peers, and tech recruiters. Reach out via email, social networks, or send a message using the form.
+            </p>
+
+            <div class="contact-cards-list">
+              <!-- Email Card -->
+              <div class="contact-card card-glass">
+                <div class="contact-icon-box">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-card-text">
+                  <span class="contact-label">Email Address</span>
+                  <!-- EDIT HERE: Your Email -->
+                  <a href="mailto:piyush.26bcon2195@jecrcu.edu.in" class="contact-link" id="emailContactLink">
+                    piyush.26bcon2195@jecrcu.edu.in
+                  </a>
+                </div>
+                <button class="copy-btn" id="copyEmailBtn" title="Copy email to clipboard" aria-label="Copy email">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+
+              <!-- Location Card -->
+              <div class="contact-card card-glass">
+                <div class="contact-icon-box">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="contact-card-text">
+                  <span class="contact-label">Location</span>
+                  <!-- EDIT HERE: Your City/Campus -->
+                  <span class="contact-val">JECRC University, Jaipur, Rajasthan, India</span>
+                </div>
+              </div>
+
+              <!-- Phone Card (Optional) -->
+              <!-- EDIT HERE: Update with your phone number or remove if not desired -->
+              <div class="contact-card card-glass">
+                <div class="contact-icon-box">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact-card-text">
+                  <span class="contact-label">Phone (Optional)</span>
+                  <a href="tel:+919876543210" class="contact-link">
+                    +91 98765 43210
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links inside Contact Info -->
+            <div class="contact-social-section">
+              <span class="social-section-title">Follow &amp; Connect:</span>
+              <div class="social-pills-row">
+                <!-- EDIT HERE: GitHub Profile -->
+                <a href="https://github.com/piyush26bcon2195-cell" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="GitHub Profile">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+                <!-- EDIT HERE: LinkedIn Profile -->
+                <a href="https://www.linkedin.com/in/piyush-yadav-b19512435?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="LinkedIn Profile">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                  <span>LinkedIn</span>
+                </a>
+                <!-- EDIT HERE: Direct Email -->
+                <a href="mailto:piyush.26bcon2195@jecrcu.edu.in" class="social-pill" aria-label="Send direct email">
+                  <i class="fa-solid fa-envelope"></i>
+                  <span>Email</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Contact Form -->
+          <div class="contact-form-col" data-reveal="fade-left">
+            <div class="form-wrapper card-glass">
+              <h3 class="form-title">Send Me a Message</h3>
+              <p class="form-subtitle">Fill in the fields below and I'll get back to you as soon as possible.</p>
+
+              <!-- =========================================================
+                   NOTE FOR USER / STUDENT:
+                   To receive real form submissions to your inbox for free,
+                   you can easily connect this form to Formspree (https://formspree.io):
+                   Change action to: action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+                   method="POST"
+                   ========================================================= -->
+              <form class="contact-form" id="contactForm" novalidate>
+                <!-- Full Name Field -->
+                <div class="form-group">
+                  <label for="userName" class="form-label">
+                    <i class="fa-regular fa-user"></i> Your Name <span class="required">*</span>
+                  </label>
+                  <input type="text" id="userName" name="name" class="form-input" placeholder="e.g. Alex Sharma" required />
+                  <span class="error-msg" id="nameError">Please enter your name (at least 2 characters).</span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                  <label for="userEmail" class="form-label">
+                    <i class="fa-regular fa-envelope"></i> Your Email <span class="required">*</span>
+                  </label>
+                  <input type="email" id="userEmail" name="email" class="form-input" placeholder="e.g. alex@example.com" required />
+                  <span class="error-msg" id="emailError">Please enter a valid email address.</span>
+                </div>
+
+                <!-- Subject Field -->
+                <div class="form-group">
+                  <label for="userSubject" class="form-label">
+                    <i class="fa-solid fa-tag"></i> Subject
+                  </label>
+                  <input type="text" id="userSubject" name="subject" class="form-input" placeholder="e.g. Hackathon Project Collaboration / Hello" />
+                </div>
+
+                <!-- Message Field -->
+                <div class="form-group">
+                  <label for="userMessage" class="form-label">
+                    <i class="fa-regular fa-comment-dots"></i> Message <span class="required">*</span>
+                  </label>
+                  <textarea id="userMessage" name="message" class="form-textarea" rows="5" placeholder="Hi Piyush, I saw your portfolio and would love to connect..." required></textarea>
+                  <span class="error-msg" id="messageError">Please enter a message (at least 10 characters).</span>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                  <span class="btn-text">
+                    <i class="fa-solid fa-paper-plane"></i> Send Message
+                  </span>
+                  <span class="btn-loader" style="display: none;">
+                    <i class="fa-solid fa-spinner fa-spin"></i> Sending...
+                  </span>
+                </button>
+              </form>
+
+              <!-- Form Success Feedback Box -->
+              <div class="form-feedback success-feedback" id="formSuccessMsg" style="display: none;">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <h4>Message Sent Successfully!</h4>
+                  <p>Thank you for reaching out, Piyush will respond shortly.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================
+       9. FOOTER SECTION
+       =================================================================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <!-- Footer Top -->
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo">
+            <span class="brand-bracket">&lt;</span>
+            <span class="brand-name">Piyush</span>
+            <span class="brand-dot">.</span>
+            <span class="brand-role">dev</span>
+            <span class="brand-bracket">/&gt;</span>
+          </a>
+          <p class="footer-bio">
+            First-year Computer Science Engineering student at JECRC University, Jaipur. Exploring Web Development, Python &amp; AI data tools.
+          </p>
+        </div>
+
+        <!-- Quick Navigation Links in Footer -->
+        <div class="footer-nav">
+          <span class="footer-heading">Quick Links</span>
+          <ul class="footer-links">
+            <li><a href="#home"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="#about"><i class="fa-solid fa-chevron-right"></i> About Me</a></li>
+            <li><a href="#education"><i class="fa-solid fa-chevron-right"></i> Education</a></li>
+            <li><a href="#skills"><i class="fa-solid fa-chevron-right"></i> Skills</a></li>
+            <li><a href="#projects"><i class="fa-solid fa-chevron-right"></i> Projects</a></li>
+            <li><a href="#certifications"><i class="fa-solid fa-chevron-right"></i> Achievements</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Links in Footer -->
+        <div class="footer-socials-col">
+          <span class="footer-heading">Connect With Me</span>
+          <p class="footer-connect-text">Let's build the future together. Follow my journey across platforms:</p>
+          <div class="footer-social-icons">
+            <!-- EDIT HERE: GitHub Profile -->
+            <a href="https://github.com/piyush26bcon2195-cell" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <!-- EDIT HERE: LinkedIn Profile -->
+            <a href="https://www.linkedin.com/in/piyush-yadav-b19512435?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <!-- EDIT HERE: Email -->
+            <a href="mailto:piyush.26bcon2195@jecrcu.edu.in" class="social-icon" aria-label="Email Piyush" title="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="currentYear"></span> <strong>Piyush Yadav</strong>. All rights reserved.
+        </p>
+        <p class="footer-credits">
+          Designed &amp; built with <i class="fa-solid fa-heart heart-beat"></i> for engineering excellence.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       10. FLOATING BACK-TO-TOP BUTTON
+       =================================================================== -->
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Scroll back to top of page" title="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ===================================================================
+       11. TOAST NOTIFICATION CONTAINER
+       =================================================================== -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#022C22" />
+    </linearGradient>
+    <linearGradient id="pythonYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+    <linearGradient id="pythonBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="360" fill="url(#bgGrad4)"/>
+
+  <!-- Terminal Window Frame -->
+  <rect x="50" y="45" width="500" height="270" rx="14" fill="#030712" stroke="#10B981" stroke-width="2"/>
+  
+  <!-- Terminal Header -->
+  <rect x="50" y="45" width="500" height="36" rx="14" fill="#111827"/>
+  <rect x="50" y="70" width="500" height="11" fill="#111827"/>
+  <circle cx="75" cy="63" r="5" fill="#EF4444" />
+  <circle cx="95" cy="63" r="5" fill="#F59E0B" />
+  <circle cx="115" cy="63" r="5" fill="#10B981" />
+  <text x="300" y="68" font-family="'Courier New', monospace" font-size="12" fill="#9CA3AF" text-anchor="middle">pratham@jecrc: ~/automation-tools</text>
+
+  <!-- Terminal Code & Automation Output -->
+  <g font-family="'Courier New', monospace" font-size="13">
+    <text x="80" y="115" fill="#10B981">$ python3 automate_pipeline.py --source ./data --clean</text>
+    <text x="80" y="145" fill="#94A3B8">[+] Initializing Python automation engine...</text>
+    <text x="80" y="172" fill="#38BDF8">[✓] Parsed 542 files in 0.48s</text>
+    <text x="80" y="199" fill="#38BDF8">[✓] Applied AI data cleaning and normalization filters</text>
+    <text x="80" y="226" fill="#FCD34D">[⚡] Output generated: summary_report.csv</text>
+    <text x="80" y="253" fill="#10B981">[✓] Process completed with status 0. All tasks done!</text>
+    <text x="80" y="285" fill="#10B981">$ <tspan fill="#F8FAFC">_</tspan></text>
+  </g>
+
+  <!-- Python logo watermark in corner -->
+  <g transform="translate(450, 190) scale(0.65)" opacity="0.35">
+    <path d="M 50 10 A 40 40 0 0 0 10 50 L 10 70 A 20 20 0 0 0 30 90 L 50 90 L 50 80 A 10 10 0 0 1 60 70 L 90 70 A 20 20 0 0 0 110 50 L 110 30 A 20 20 0 0 0 90 10 L 50 10 Z" fill="url(#pythonBlue)"/>
+    <circle cx="35" cy="30" r="5" fill="#0B132B"/>
+    <path d="M 70 110 A 40 40 0 0 0 110 70 L 110 50 A 20 20 0 0 0 90 30 L 70 30 L 70 40 A 10 10 0 0 1 60 50 L 30 50 A 20 20 0 0 0 10 70 L 10 90 A 20 20 0 0 0 30 110 L 70 110 Z" fill="url(#pythonYellow)"/>
+    <circle cx="85" cy="90" r="5" fill="#0B132B"/>
+  </g>
+</svg>
